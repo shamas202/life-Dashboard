@@ -1,0 +1,13 @@
+node_modules/
+.env
+dist/
+bin/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

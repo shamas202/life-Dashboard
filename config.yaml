@@ -1,0 +1,48 @@
+app:
+  name: "Life Dashboard"
+  version: "1.0.0"
+  description: "Unified personal life aggregator"
+
+server:
+  go_port: 8080
+  python_port: 5000
+  frontend_port: 5173
+
+cors:
+  allowed_origins:
+    - "http://localhost:5173"
+    - "http://localhost:3000"
+
+mock_data:
+  enabled: true   # Set to false to use real integrations
+
+integrations:
+  gmail:
+    enabled: false
+    client_id: "YOUR_GMAIL_CLIENT_ID"
+    scopes:
+      - "https://www.googleapis.com/auth/gmail.readonly"
+
+  google_calendar:
+    enabled: false
+    client_id: "YOUR_GOOGLE_CALENDAR_CLIENT_ID"
+    scopes:
+      - "https://www.googleapis.com/auth/calendar.readonly"
+
+  outlook:
+    enabled: false
+    tenant_id: "YOUR_AZURE_TENANT_ID"
+    client_id: "YOUR_AZURE_CLIENT_ID"
+
+  apple_calendar:
+    enabled: false
+
+refresh_interval_seconds: 60
+
+categories:
+  - flights
+  - hotels
+  - meetings
+  - tasks
+  - emails
+  - reminders
