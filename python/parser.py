@@ -1,5 +1,5 @@
 """
-Life Dashboard — Python Parse Microservice
+Life Dashboard — Python Parser Microservice
 Parses raw email/calendar content, extracts structured action items.
 Runs on port 5000.
 """
