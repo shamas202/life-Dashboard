@@ -1,4 +1,4 @@
-package model
+package models
 
 // Config maps config.yaml structures
 type Config struct {
