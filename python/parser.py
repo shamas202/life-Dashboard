@@ -50,7 +50,7 @@ def extract_action_items(text: str) -> list[str]:
         r"due\s+(?:date|by)[:\s]+([^\n.]{5,50})",
     ]
     items = []
-     pat in triggers:
+    for pat in triggers:
         for m in re.finditer(pat, text, re.IGNORECASE):
             item = m.group(1).strip().capitalize()
             if 5 < len(item) < 120:
