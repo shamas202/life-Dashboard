@@ -15,7 +15,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Load config
-try:
+load:
     with open("../config.yaml", "r") as f:
         config = yaml.safe_load(f)
     PYTHON_PORT = config.get("server", {}).get("python_port", 5000)
