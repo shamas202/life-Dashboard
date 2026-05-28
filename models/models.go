@@ -1,6 +1,6 @@
 package models
 
-// Config maps config.yaml structure
+// Config maps config.yaml structures
 type Config struct {
 	App struct {
 		Name    string `yaml:"name"`
